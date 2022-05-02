@@ -1,0 +1,134 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+
+
+  
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.loginBackground {
+  display: flex;
+  height: 100vh;
+}
+
+.loginleft {
+  background: rgb(3, 109, 248);
+  width: 50vw;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 90% 83%, 0% 90%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  align-items: center;
+}
+.loginleft > h1 {
+  color: white;
+}
+.loginleft > p {
+  color: white;
+  margin: 3px;
+}
+.loginleft > .button-primary {
+  width: 150px;
+  border: white solid 2px;
+  padding: 10px 30px;
+  background: transparent;
+  border-radius: 20px;
+  color: white;
+  margin: 20px 0px;
+  transition: 0.5s ease-in-out;
+  font-weight: bolder;
+  outline: none;
+}
+.loginleft > .button-primary:hover {
+  background: white;
+  color: rgb(0, 110, 255);
+  transition: 0.5s ease-in-out;
+}
+
+.loginright {
+  background: white;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  align-items: center;
+  margin-top: 20vh;
+}
+.loginright > h1 {
+  margin: 10px;
+}
+.loginright > input {
+  width: 20vw;
+  border: none;
+  background-color: lightgray;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.loginright .button-primary {
+  border: none;
+  padding: 12px 50px;
+  background-color: rgb(0, 110, 255);
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+
+.loginright .button-primary:hover {
+  box-shadow: 0px 0px 5px 1px black;
+  transition: 0.5s ease-in-out;
+}
+.loginright .button-primary::after {
+  background: black;
+  transition: 2s ease-in-out;
+}
+.loginright .button-primary:active:after {
+  transition: 0s;
+}
+.loginright p {
+  margin: 10px;
+  font-weight: bold;
+}
+.loginright img {
+  margin: 0px 10px;
+}
+
+@media (max-width: 480px) {
+
+  .loginleft {
+    display: none;
+  }
+
+  .loginright {
+    width: 100vw;
+    margin-top: 0px;
+    padding-top: 30px;
+    background-color: rgb(0, 110, 255);
+    clip-path: polygon(0 0, 100% 0, 90% 83%, 0% 90%);
+  }
+  .loginright input {
+    width: 50vw;
+    background: white;
+  }
+  .loginright .button-primary {
+    background: white;
+    color: rgb(0, 110, 255);
+  }
+}
